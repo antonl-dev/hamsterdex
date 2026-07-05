@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Beautiful Soft Mesh Gradient Background */
+.mesh-background {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -1;
+    background: radial-gradient(at 40% 20%, rgba(255, 179, 198, 0.4) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(197, 203, 255, 0.4) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(255, 230, 204, 0.4) 0px, transparent 50%);
+    filter: blur(40px);
+}
+
+/* --- THE GLASS EFFECT CLASSES --- */
+.glass-pill {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* --- SEARCH BAR --- */
+.search-bar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 50px; /* Pill shape */
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    z-index: 100;
+}
+
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 15px;
+    color: #333;
+}
+
+.search-bar input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    color: #555;
+    cursor: pointer;
+}
+
+/* --- GRID LAYOUT --- */
+.grid-container {
+    display: grid;
+    /* Responsive grid: auto-fits as many 160px cards as possible */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 100px 20px 40px; /* Top padding clears the floating header */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- CARD STYLING --- */
+.hamster-card {
+    border-radius: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hamster-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes images perfectly square */
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.tags-container {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag-pill {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #444;
+}
