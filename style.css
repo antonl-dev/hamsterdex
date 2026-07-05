@@ -48,7 +48,7 @@ body {
     transform: translateX(-50%);
     width: 90%;
     max-width: 500px;
-    border-radius: 50px; /* Pill shape */
+    border-radius: 50px;
     display: flex;
     align-items: center;
     padding: 12px 20px;
@@ -77,10 +77,9 @@ body {
 /* --- GRID LAYOUT --- */
 .grid-container {
     display: grid;
-    /* Responsive grid: auto-fits as many 160px cards as possible */
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 20px;
-    padding: 100px 20px 40px; /* Top padding clears the floating header */
+    padding: 100px 20px 40px; 
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -103,7 +102,7 @@ body {
 
 .card-image {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Makes images perfectly square */
+    aspect-ratio: 1 / 1; 
     object-fit: cover;
     border-bottom: 1px solid rgba(255,255,255,0.4);
 }
@@ -122,4 +121,5 @@ body {
     font-size: 11px;
     font-weight: 500;
     color: #444;
+    white-space: nowrap; /* Prevents long tags from wrapping ugly */
 }

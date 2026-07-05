@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "tags": ["crying", "sad", "tears", "bed"],
+        "thumbnail": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=400&q=80", 
+        "url": "https://instagram.com/almarts27"
+    },
+    {
+        "id": 2,
+        "tags": ["angry", "knife", "stabby", "red"],
+        "thumbnail": "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?auto=format&fit=crop&w=400&q=80",
+        "url": "https://instagram.com/almarts27"
+    },
+    {
+        "id": 3,
+        "tags": ["happy", "vibing", "strawberry", "snack"],
+        "thumbnail": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=400&q=80",
+        "url": "https://instagram.com/almarts27"
+    },
+    {
+        "id": 4,
+        "tags": ["staring", "blank", "existential dread"],
+        "thumbnail": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=400&q=80",
+        "url": "https://instagram.com/almarts27"
+    }
+]
