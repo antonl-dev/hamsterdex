@@ -123,3 +123,10 @@ body {
     color: #444;
     white-space: nowrap; /* Prevents long tags from wrapping ugly */
 }
+
+.tag-pill.highlight {
+    background: rgba(255, 105, 135, 0.85); /* Nice pink/red to match the mesh */
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
